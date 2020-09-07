@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %} 
+  
+<div class="container d-flex align-items-center justify-content-center">
+    
+    <form action="" class="form text-center" method="post">
+
+        <h1 class="mb-5 pt-3 font-weight-normal text-uppercase">Movement</h1>
+        <div class="form-group">
+            <select class="form-control rounded-pill form-control-lg" name="fromlocation" id="fromlocation">
+                <option value="select">Select From Location</option>
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control rounded-pill form-control-lg" name="fromlocation" id="fromlocation">
+                <option value="select">Select To Location</option>
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control rounded-pill form-control-lg" name="fromlocation" id="fromlocation">
+                <option value="select">Select Product</option>
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" name="quantity" id="quantity" placeholder="Select Quantity" class="form-control rounded-pill form-control-lg" min="0">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mt-3 mb-3 btn-block text-uppercase rounded-pill btn-lg">Add Movement</button>
+        </div>
+    </form>
+</div>
+
+<div class="container d-flex align-items-center justify-content-center">
+    <table class="table table-striped text-center">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">FROM</th>
+                <th scope="col">TO</th>
+                <th scope="col">PRODUCT</th>
+                <th scope="col">QUANTITY</th>
+                <th scope="col">ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><i class="fa fa-edit"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}
